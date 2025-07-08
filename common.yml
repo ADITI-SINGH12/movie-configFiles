@@ -6,7 +6,7 @@ app:
   message: "Welcome to Movie Ticket Booking System"
   contactDetails:
     name: "Aditi Singh"
-    email: "{cipher}....." # If you want to encrypt
+    email: "{cipher}8261e39cfb1bf7f6fd069bfa427752a85b088af753ef7fe9acade650824c739c4eac8b4dca146eeb1e4db5fff87a310e" # If you want to encrypt
   support:
     onCallSupport:
       - "(777) 111-2222"
