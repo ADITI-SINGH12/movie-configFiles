@@ -1,0 +1,19 @@
+
+build:
+  version: 1.0
+
+app:
+  message: "Welcome to Movie Ticket Booking System"
+  contactDetails:
+    name: "Aditi Singh"
+    email: "{cipher}....." # If you want to encrypt
+  support:
+    onCallSupport:
+      - "(777) 111-2222"
+      - "(777) 333-4444"
+
+spring:
+  profiles:
+    active: default
+  application:
+    name: configserver
