@@ -20,3 +20,5 @@ spring:
     show-sql: true
   application:
     name: configserver
+server:
+  port: 8080
