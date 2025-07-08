@@ -2,7 +2,7 @@ movie:
   message: "Movie Service: Handles all movie CRUD operations."
   admin:
     default-username: "admin"
-    default-password: "{cipher}....."  # if you store admin creds here
+    default-password: "{cipher}26a65bba2320d0ae1b29bd07816a183d3ebe820eabd593d2a54652f2d11f5070"  # if you store admin creds here
   contactDetails:
     name: "Movie Service Support"
     email: "support@moviebooking.com"
@@ -18,3 +18,5 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  application:
+    name: configserver
