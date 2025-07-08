@@ -1,12 +1,11 @@
+server:
+ port: 8070
 
-build:
- version: 2.0
-
-account:
-  message:  "Welcome to EazyBank accounts related QA APIs"
-  contactDetails:
-    name: "Ranny Singh - QA Lead"
-    email: "ranny@eazybank.com"
-  onCallSupport:
-    - (666) 555-1234
-    - (666) 523-1345
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetchRegistry: false
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
