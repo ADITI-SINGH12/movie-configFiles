@@ -19,6 +19,6 @@ spring:
       ddl-auto: update
     show-sql: true
   application:
-    name: configserver
+    name: movie
 server:
   port: 8080
