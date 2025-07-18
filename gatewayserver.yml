@@ -1,0 +1,20 @@
+gatewayserver:
+  message: "Gateway Server"
+  admin:
+    default-username: "admin"
+    default-password: "{cipher}26a65bba2320d0ae1b29bd07816a183d3ebe820eabd593d2a54652f2d11f5070"  # if you store admin creds here
+  contactDetails:
+    name: "Movie Service Support"
+    email: "support@moviebooking.com"
+
+server:
+ port: 8072
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
