@@ -1,0 +1,53 @@
+movie:
+  message: "Theater Service: Handles all theater CRUD operations."
+  admin:
+    default-username: "admin"
+    default-password: "{cipher}26a65bba2320d0ae1b29bd07816a183d3ebe820eabd593d2a54652f2d11f5070"  # if you store admin creds here
+  contactDetails:
+    name: "Movie Service Support"
+    email: "support@moviebooking.com"
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:moviedb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: theater
+server:
+  port: 8090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    shutdown:
+      access: unrestricted
+    health:
+      probes:
+        enabled: true
+
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: false
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: "http://localhost:8070/eureka/"
+
+
