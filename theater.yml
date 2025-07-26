@@ -9,7 +9,7 @@ movie:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:moviedb
+    url: jdbc:h2:mem:theatredb
     driverClassName: org.h2.Driver
     username: sa
     password: ""
